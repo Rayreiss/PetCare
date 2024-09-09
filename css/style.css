@@ -1,0 +1,283 @@
+/* Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Alice Blue */
+    color: #333333; /* Texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #343a40; /* Cinza Escuro */
+    color: #ffffff; /* Branco */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #ff9800; /* Laranja Claro */
+    color: #343a40; /* Cinza Escuro */
+    transform: scale(1.05);
+}
+
+/* Banner/Carousel */
+.carousel-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.5s;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Conteúdo Principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.main-content .col-md-6 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 500px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-content .col-md-6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.main-content .col-md-6 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main-content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ff5722; /* Laranja Vibrante */
+}
+
+.main-content p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6;
+    color: #555555;
+}
+
+/* Formulários */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+}
+
+form button {
+    background-color: #ff5722; /* Laranja Vibrante */
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Botões de Navegação e Ação */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+    gap: 20px; /* Espaço entre os botões */
+    margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Botão Adicionar ao Carrinho */
+.btn-add-cart {
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: #2980b9; /* Azul Escuro */
+    transform: scale(1.05);
+}
+
+/* Botão Voltar para Home */
+.btn-home {
+    background-color: #ff9800; /* Laranja Claro */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-home:hover {
+    background-color: #e68900; /* Laranja Escuro */
+    transform: scale(1.05);
+}
+
+/* Tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table th {
+    background-color: #ff9800; /* Laranja Claro */
+    color: #ffffff;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40; /* Cinza Escuro */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+footer .social-media a {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+footer .social-media a:hover {
+    transform: scale(1.2);
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .main-content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .main-content .col-md-6 img {
+        height: 200px;
+    }
+}
+
+
+
+
+
+

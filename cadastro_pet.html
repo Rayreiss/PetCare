@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <h1>PetShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cadastro_cliente.html">Cadastro de Cliente</a>
+            <a href="produtos_servicos.html">Produtos e Serviços</a>
+            <a href="cadastro_pet.html">Cadastro de Pet</a>
+            <a href="agendamento.html">Agendamento de Serviços</a>
+            <a href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+
+    <!-- Cadastro de Pet -->
+    <div class="container mt-5">
+        <h2>Cadastro de Pet</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome_pet" class="form-label">Nome do Pet</label>
+                <input type="text" class="form-control" id="nome_pet" placeholder="Nome do Pet">
+            </div>
+            <div class="mb-3">
+                <label for="especie_pet" class="form-label">Espécie</label>
+                <input type="text" class="form-control" id="especie_pet" placeholder="Espécie do Pet">
+            </div>
+            <div class="mb-3">
+                <label for="raca_pet" class="form-label">Raça</label>
+                <input type="text" class="form-control" id="raca_pet" placeholder="Raça do Pet">
+            </div>
+            <div class="mb-3">
+                <label for="idade_pet" class="form-label">Idade</label>
+                <input type="number" class="form-control" id="idade_pet" placeholder="Idade do Pet">
+            </div>
+            <div class="mb-3">
+                <label for="cliente_pet" class="form-label">Cliente</label>
+                <input type="text" class="form-control" id="cliente_pet" placeholder="Nome do Cliente">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+        <a href="index.html" class="btn btn-secondary mt-3">Voltar à Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PetShop. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="#"><img src="img/facebook_icon.png" alt="Facebook"></a>
+            <a href="#"><img src="img/instagram_icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
